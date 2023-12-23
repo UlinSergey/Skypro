@@ -15,5 +15,7 @@ public class Main {
         book1.setPublicationYear(2013);
         System.out.println(book1.getTitle() + " был опубликован в " + book1.getPublicationYear());
 
+        System.out.println(book1);
+        System.out.println(book2);
     }
 }
