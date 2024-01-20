@@ -42,12 +42,12 @@ class Main {
                 30
         );
         System.out.println(harryPotter);
-        System.out.println(harryPotter);
+        System.out.println(hermioneGranger);
         System.out.println(dracoMalfoy);
         System.out.println(gragoryGoyl);
 
-        harryPotter.compareAnyStydent(hermioneGranger);
-        dracoMalfoy.compareAnyStydent(gragoryGoyl);
+        harryPotter.compare(hermioneGranger);
+        dracoMalfoy.compare(gragoryGoyl);
 
         harryPotter.compareAnyStydent(dracoMalfoy);
         hermioneGranger.compareAnyStydent(gragoryGoyl);

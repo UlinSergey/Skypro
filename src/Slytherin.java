@@ -55,6 +55,29 @@ public class Slytherin  extends Hogwarts{
         this.thirstForPower = thirstForPower;
     }
 
+    public void compare (Slytherin second){
+        int firstSum=this.getCunning()+
+                this.getDetermination()+
+                this.getAmbition()+
+                this.getResourcefulness()+
+                this.getThirstForPower();
+        int secondSum= second.getCunning()+
+                second.getDetermination()+
+                second.getAmbition()+
+                second.getResourcefulness()+
+                second.getThirstForPower();
+
+        if (firstSum>secondSum){
+            System.out.println(this.getName()+ " Более лучший в факультете Слизерин, чем "+ second.getName());
+        }else if (secondSum>firstSum){
+            System.out.println(second.getName()+ " Более лучший в факультете Слизерин, чем "+ this.getName());
+        }else {
+            System.out.println(this.getName()+" и "+ second.getName()+" Равны ");
+        }
+
+    }
+
+
     @Override
     public String toString() {
         return getName()
